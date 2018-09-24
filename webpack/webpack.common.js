@@ -24,7 +24,7 @@ module.exports = {
             [dest],
             { root: Path.join(__dirname, '../') }),
         new CopyWebpackPlugin([
-            {from: Path.resolve(__dirname, '../public'), to: 'public'}
+            {from: Path.resolve(__dirname, '../public'), to: './'}
         ]),
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/index.html'),
