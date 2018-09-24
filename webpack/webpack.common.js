@@ -14,7 +14,7 @@ const dest = Path.join(__dirname, '../dist');
 // });
 
 module.exports = {
-    entry: Path.resolve(__dirname, '../src/app/index'),
+    entry: Path.resolve(__dirname, '../src/scripts/index'),
     output: {
         path: dest,
         filename: 'scripts/bundle.[hash].js'

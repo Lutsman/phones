@@ -9,31 +9,24 @@ const extractLess = new ExtractTextPlugin({
 });
 
 module.exports = merge(common, {
-    mode: 'production',
-    devtool: 'none',
-    stats: 'errors-only',
-    optimization: {
-        minimize: true
-    },
+    mode: 'development',
+    devtool: 'cheap-eval-source-map',
     plugins: [
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production')
+            'process.env.NODE_ENV': JSON.stringify('development')
         }),
-        new ExtractTextPlugin({filename: 'bundle.css'}),
-        // compiling mode “scope hoisting”
-        new webpack.optimize.ModuleConcatenationPlugin(),
         extractLess,
     ],
     module: {
         rules: [
             {
                 test: /\.(js)$/,
-                use: 'babel-loader'
+                loader: 'babel-loader'
             },
             {
                 test: /\.(less|css)$/,
-                use: extractLess.extract(['css-loader?minimize=true', 'less-loader'])
-            }
-        ]
-    }
+                use: extractLess.extract(['css-loader?minimize=true?sourceMap=true', 'less-loader'])
+            },
+        ],
+    },
 });
