@@ -52,7 +52,7 @@
                     
                     <div class="uk-padding uk-padding-remove-horizontal">
                         <div class="uk-container uk-text-center">
-                            <button class="tm-button-2 uk-button uk-button-default">
+                            <button class="tm-button-2 uk-button uk-button-default" uk-toggle="target: #main-video">
                                 <span>Watch video</span>
                                 <i class="fa fa-caret-right uk-margin-small-left"></i>
                             </button>
@@ -101,10 +101,18 @@
                                     to the world.</h2>
                                 <div class="uk-position-relative">
                                     <img src="images/phone.png" alt="" class="">
-                                    <img src="images/phone_story.png" alt="" class="uk-position-center">
-                                    <video class="my-background-video jquery-background-video uk-position-center" loop autoplay muted playsinline poster="images/phone_story.png">
-                                        <source src="video/anim_1.mp4" type="video/mp4">
-                                    </video>
+                                    <div class="uk-position-center tm-background-video-container">
+                                        <video
+                                                class="jquery-background-video"
+                                                loop
+                                                autoplay
+                                                muted
+                                                playsinline
+                                                poster="images/phone_story.png">
+                                                <source src="video/anim_1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -255,6 +263,26 @@
         <button class="uk-modal-close uk-flex uk-flex-middle" type="button" uk-close>
             <span class="uk-margin-small-right">Close</span>
         </button>
+    </div>
+</div>
+
+<div id="main-video" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title"></h2>
+        <button class="uk-modal-close uk-flex uk-flex-middle" type="button" uk-close>
+            <span class="uk-margin-small-right">Close</span>
+        </button>
+        <div class="uk-position-center tm-background-video-container">
+            <video
+                    class="jquery-background-video"
+                    loop
+                    autoplay
+                    muted
+                    playsinline
+                    poster="images/phone_story.png">
+                <source src="video/anim_1.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 </div>
 
