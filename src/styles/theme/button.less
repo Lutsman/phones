@@ -11,9 +11,13 @@
 @button-small-line-height:                      @global-control-small-height - (@button-border-width * 2);
 @button-large-line-height:                      @global-control-large-height - (@button-border-width * 2);
 
-@button-font-size:                              @global-small-font-size;
-@button-large-font-size:                        @global-small-font-size;
+@button-font-size:                              @global-large-font-size;
+@button-large-font-size:                        @global-large-font-size;
 
+@button-padding-horizontal:                     @global-medium-gutter;
+
+@button-default-color:                          #fff;
+@button-default-hover-color:                    @global-emphasis-color;
 @button-default-background:                     transparent;
 @button-default-hover-background:               transparent;
 @button-default-active-background:              transparent;
@@ -27,13 +31,13 @@
 // New
 //
 
-@button-text-transform:                         uppercase;
+@button-text-transform:                         none;
 
 @button-border-width:                           @global-border-width;
 
-@button-default-border:                         @global-border;
-@button-default-hover-border:                   darken(@global-border, 20%);
-@button-default-active-border:                  darken(@global-border, 30%);
+@button-default-border:                         #fff;
+@button-default-hover-border:                   #fff;
+@button-default-active-border:                  #fff;
 
 @button-disabled-border:                        @global-border;
 
@@ -60,7 +64,11 @@
 // Style modifiers
 // ========================================================================
 
-.hook-button-default() { border: @button-border-width solid @button-default-border; }
+.hook-button-default() {
+    font-family: Heebo-Bold, @global-font-family;
+    border: @button-border-width solid @button-default-border;
+    border-radius: 500px;
+}
 
 .hook-button-default-hover() { border-color: @button-default-hover-border; }
 
