@@ -1,0 +1,82 @@
+/* jtooltip */
+
+.jtooltip {
+  position: absolute;
+  z-index: 100000;
+  padding: 5px;
+  font-size: 11px;
+}
+.jtooltip-inner {
+  max-width: 200px;
+  padding: 6px 15px 6px 15px;
+  text-align: center;
+  border-radius: 3px;
+}
+.jtooltip-arrow {
+  display: block;
+  position: absolute;
+  border: 10px solid transparent;
+}
+
+.jtooltip-b .jtooltip-arrow {
+  top: -15px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-left-color: transparent !important;
+  border-bottom-color: @global-color;
+}
+.jtooltip-t .jtooltip-arrow {
+  bottom: -15px;
+  border-right-color: transparent !important;
+  border-left-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-top-color: @global-color;
+}
+.jtooltip-l .jtooltip-arrow {
+  right: -15px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-left-color: @global-color;
+}
+.jtooltip-r .jtooltip-arrow {
+  left: -15px;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-right-color: @global-color;
+}
+
+.js__jtooltip-s_white {
+
+  .jtooltip-inner {
+    color: @global-color;
+    background-color: @global-color;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.25);
+  }
+  .jtooltip-arrow {
+    border-color: @global-color;
+  }
+}
+
+.js__jtooltip-s_grey {
+
+  .jtooltip-inner {
+    color: @global-color;
+    background-color: grey;
+  }
+  .jtooltip-arrow {
+    border-color: grey;
+  }
+}
+
+.js__jtooltip-s_dark {
+
+  .jtooltip-inner {
+    color: grey;
+    background-color: @global-color;
+  }
+  .jtooltip-arrow {
+    border-color: @global-color;
+  }
+}
