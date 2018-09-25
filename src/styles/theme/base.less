@@ -69,13 +69,13 @@
 @base-hr-border-width:                          @global-border-width;
 @base-hr-border:                                @global-border;
 
-@base-blockquote-font-size:                     @global-medium-font-size;
-@base-blockquote-line-height:                   1.5;
-@base-blockquote-font-style:                    italic;
+@base-blockquote-font-size:                     45px;
+@base-blockquote-line-height:                   66px;
+@base-blockquote-font-style:                    normal;
 @base-blockquote-margin-vertical:               @global-margin;
 @base-blockquote-footer-margin-top:             @global-small-margin;
-@base-blockquote-footer-font-size:              @global-small-font-size;
-@base-blockquote-footer-line-height:            1.5;
+@base-blockquote-footer-font-size:              @global-font-size;
+@base-blockquote-footer-line-height:            @global-line-height;
 
 @base-pre-font-size:                            @global-small-font-size;
 @base-pre-line-height:                          1.5;
@@ -93,7 +93,7 @@
 @base-code-padding-vertical:                    2px;
 @base-code-background:                          @global-muted-background;
 
-@base-blockquote-color:                         @global-emphasis-color;
+@base-blockquote-color:                         #000;
 
 @base-blockquote-footer-color:                  @global-color;
 
@@ -163,9 +163,6 @@
 .hook-base-blockquote-footer() {
 
     color: @base-blockquote-footer-color;
-
-    &::before { content: "— "; }
-
 }
 
 
