@@ -330,8 +330,9 @@
                 </div>
             </div>
 
-            <div class="uk-section uk-overflow-hidden uk-background-secondary">
-                <div class="uk-container">
+            <div class="uk-section uk-cover-container uk-background-secondary">
+                <img src="images/bg_purpose.png" alt="" uk-cover>
+                <div class="uk-container uk-position-relative">
                     <div class="uk-child-width-1-2@m uk-flex-middle uk-grid-collapse" uk-grid>
                         <div>
                             <div class="uk-card uk-card-body uk-padding-remove-right">
@@ -382,42 +383,45 @@
             </div>
         </footer>
     </div>
-
-
-    <!--<div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-            <div class="uk-card uk-flex uk-flex-center uk-margin-large-top">
-                <ul class="uk-nav">
-                    <li>
-                        <a href="index.html" class="uk-active"><span>Главная</span></a>
-                    </li>
-
-                    <li>
-                        <a href="services.html"><span>Услуги</span></a>
-                    </li>
-
-                    <li>
-                        <a href="prices.html"><span>Цены</span></a>
-                    </li>
-
-                    <li>
-                        <a href="about.html"><span>О нас</span></a>
-                    </li>
-
-                    <li>
-                        <a href="contacts.html"><span>Контакты и оплата</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>-->
 </div>
 
 <div id="tm-form_feedback" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title"></h2>
+    <div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
+        <h2 class="uk-modal-title uk-text-center">Have a Question?</h2>
+        <form action="">
+            <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
+                <div>
+                    <div class="tm-form-field">
+                        <div class="uk-form-label">Your Name</div>
+                        <input class="uk-input" type="text">
+                    </div>
+                </div>
+                <div>
+                    <div class="tm-form-field">
+                        <div class="uk-form-label">Your Email*</div>
+                        <input class="uk-input" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-child-width-1-1 uk-grid-large" uk-grid>
+                <div>
+                    <div class="tm-form-field">
+                        <div class="uk-form-label">Type Your Question*</div>
+                        <textarea class="uk-textarea"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="tm-form-field uk-position-relative">
+                        <div class="uk-form-label">Your Email*</div>
+                        <input class="uk-input" type="text">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
         <button class="uk-modal-close uk-flex uk-flex-middle" type="button" uk-close>
             <span class="uk-margin-small-right">Close</span>
         </button>
