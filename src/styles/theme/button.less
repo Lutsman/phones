@@ -85,10 +85,14 @@
 //
 
 .hook-button-primary() {
-    border: none;
+    font-family: Heebo-Bold, @global-font-family;
+    border: @button-border-width solid @global-primary-background;
+    border-radius: 500px;
 }
 
-.hook-button-primary-hover() {}
+.hook-button-primary-hover() {
+    border-color: @button-primary-hover-background;
+}
 
 .hook-button-primary-active() {}
 
