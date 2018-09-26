@@ -12,6 +12,21 @@
 
   &:hover {
     color: darken(#fff, 10%);
+    text-decoration: underline;
+  }
+}
+
+.tm-modal-close_full {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: @global-font-size;
+  color: #33c7e7;
+  transform: none;
+
+  &:hover {
+    color: darken(#33c7e7, 5%);;
   }
 }
 
@@ -25,6 +40,8 @@
   line-height: 1;
   font-size: 18px;
   text-align: left;
+  font-family: @global-font-family;
+  border-radius: 3px;
 
   .fa-apple {
     font-size: 30px;
@@ -78,7 +95,7 @@
   background-color: #191919;
   box-shadow: 0px -20px 72px 0px rgba(0,0,0,0.71);
 
-  .uk-input {
+  .uk-form-label, .uk-input {
     color: #fff;
   }
 }
