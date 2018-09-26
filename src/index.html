@@ -52,7 +52,7 @@
                     
                     <div class="uk-padding uk-padding-remove-horizontal">
                         <div class="uk-container uk-text-center" uk-lightbox="video-autoplay: true;">
-                            <a class="tm-button-2 uk-button uk-button-default"
+                            <a class="uk-button uk-button-default"
                                href="https://www.youtube.com/watch?v=wNnRWGuWu9s"
                                data-poster="./images/poster-random.jpg"
                                data-caption="YouTube">
@@ -395,13 +395,13 @@
         <form action="">
             <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
                 <div>
-                    <div class="tm-form-field">
+                    <div class="tm-form_field">
                         <div class="uk-form-label">Your Name</div>
                         <input class="uk-input" type="text">
                     </div>
                 </div>
                 <div>
-                    <div class="tm-form-field">
+                    <div class="tm-form_field">
                         <div class="uk-form-label">Your Email*</div>
                         <input class="uk-input" type="text">
                     </div>
@@ -410,16 +410,20 @@
 
             <div class="uk-child-width-1-1 uk-grid-large" uk-grid>
                 <div>
-                    <div class="tm-form-field">
+                    <div class="tm-form_field">
                         <div class="uk-form-label">Type Your Question*</div>
-                        <textarea class="uk-textarea"></textarea>
+                        <textarea class="uk-textarea" rows="3"></textarea>
                     </div>
                 </div>
 
                 <div>
-                    <div class="tm-form-field uk-position-relative">
-                        <div class="uk-form-label">Your Email*</div>
-                        <input class="uk-input" type="text">
+                    <div class="uk-flex-middle uk-flex-center" uk-grid>
+                        <div>
+                            <button class="uk-button uk-button-primary" type="submit">Send</button>
+                        </div>
+                        <div>
+                            <div class="tm-form_status">* Required fields</div>
+                        </div>
                     </div>
                 </div>
             </div>
